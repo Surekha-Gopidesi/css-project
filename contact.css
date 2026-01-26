@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    font-weight:bold;
+}
+.nav2 {
+    display: flex;
+   gap: 40px;
+}
+a{
+    cursor:pointer;
+    font-size:14px;
+   
+}
+.container2{
+    width:100%;
+    height:200px;
+    background-color: rgb(230, 232, 233);
+    margin-top: 20px;
+   text-align: center;
+}
+.contact{ 
+  padding-top: 80px;
+}
+a,span{
+    text-decoration: none;
+    color :inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* body{
+  font-family: Arial;
+  background:#f4f4f4;
+  padding:40px;
+} */
+
+.box{
+  width:700px;
+  /* background:white; */
+  padding:30px;
+  border-radius:10px;
+  /* box-shadow:0 5px 15px rgba(0,0,0,0.1); */
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+label{
+  display:block;
+  margin-top:15px;
+  font-size:12px;
+}
+
+.tick{
+  border:1px solid red;
+  border-radius:50%;
+  padding:2px 6px;
+  font-size:10px;
+  color:red;
+  margin-left:5px;
+}
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin-top:15px;
+  border:1px solid #ccc;
+  border-radius:20px;
+}
+.row{
+  display:flex;
+  gap:20px;
+}
+
+.row div{
+  width:100%;
+}
+
+button{
+  margin-top:20px;
+  background:red;
+  color:white;
+  border:none;
+  padding:10px 25px;
+  border-radius:20px;
+  cursor:pointer;
+}
+.nine{
+  width: 100%;
+    height: 180px;
+    border:1px solid;
+    margin-top: 600px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(57, 56, 56);
+  
+  }
+  .n2{
+     display: flex; 
+     gap:30px; 
+     color:aliceblue;
+     font-size: 10px;
+  }
+  .n3{
+    display: flex;
+    gap:10px; 
+  }
+  .n1,.n2,.n3{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+  text-decoration: none;
+  color: inherit;
+}
+.n{
+    display:flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+.nine hr{
+  width: 80%;
+  height: 1px;
+  margin: 20px 0;
+  margin-left: 10%;
+  color: #666;
+}
+pre{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+ margin-left: 480px;
+  color:#666;
+}

@@ -1,0 +1,521 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    padding:40px 80px;
+}
+body::selection{
+    background-color: red;
+    color: white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    font-weight:bold;
+}
+.nav2 {
+    display: flex;
+   gap: 40px;
+}
+a{
+    cursor:pointer;
+    font-size:14px;
+   
+}
+
+.sec{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    margin-top:80px;
+}
+
+
+/* ONE: comes slowly from TOP */
+.one{
+    animation: slideFromTop 1.5s ease forwards;
+}
+
+/* TWO: comes slowly from BOTTOM */
+.two{
+    animation: slideFromBottom 1.5s ease forwards;
+}
+
+/* Animation from top */
+@keyframes slideFromTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Animation from bottom */
+@keyframes slideFromBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.one{
+    width:50%;
+}
+
+.one h1{
+    font-size:60px;
+    line-height:1.2;
+}
+
+.one span{
+    color:red;
+}
+
+.one p{
+    margin:25px 0;
+    font-size:16px;
+    color:#666;
+}
+
+button{
+    padding:15px 35px;
+    border-radius:40px;
+    border:1px solid black;
+    background:white;
+    font-size:14px;
+    cursor:pointer;
+}
+button:hover{
+    color:rgb(214, 10, 10);
+   border:1px solid rgb(214, 10, 10); 
+}
+
+
+.two{
+    width:50%;
+    height:450px;
+}
+
+.two img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.third {
+    margin: 10rem auto 0;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10rem;
+    
+}
+
+
+.third  h2 .six  h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.third  p,.six>p {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 6rem;
+}
+
+
+.three {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+.contain1,
+.contain2,
+.contain3 {
+     font-size:14px;
+    width: 300px;
+    height: auto;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+
+.contain1 img,
+.contain2 img,
+.contain3 img {
+    margin-bottom: 1.5rem;
+}
+
+.contain1 h2,
+.contain2 h2,
+.contain3 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+
+.contain1 p,
+.contain2 p,
+.contain3 p {
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+.Learn { 
+    font-weight: bold;
+    cursor: pointer;
+    color: #0c0c0c;
+}
+.Learn:hover{
+    color: rgb(208, 5, 5);
+    
+}
+.four,
+.five {
+    width: 100%;
+    max-width: 1200px;
+    margin: 8rem auto;
+    display: flex;
+    gap: 50px;
+}
+.four-one ,.five-one{
+    animation: slideTop 1.5s ease forwards;
+   
+}
+
+/* TWO: comes slowly from BOTTOM */
+.four-two,.five-two{
+    animation: slideFromBottom 1.5s ease forwards;
+   
+}
+.four-one,.four-two{
+    animation-delay: 3s;
+
+}
+.five-one,.five-two{
+    animation-delay: 4s;
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Animation from bottom */
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.four-one,
+.five-two {
+    width: 50%;
+}
+
+.four-one p,
+.five-two p{
+    font-size: 14px;
+    color: gray;
+}
+
+
+.four-two,
+.five-one {
+    width: 50%;
+    height: 500px;
+}
+
+.four-two img,
+.five-one img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.four-one pre,
+.five-two pre {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.four-one h2,
+.five-two h2 {
+    font-size: 40px;
+    
+}
+.four-one button:hover,
+.five-two button:hover{
+      color:rgb(214, 10, 10);
+   border:1px solid rgb(214, 10, 10); 
+}
+
+.four-one button,
+.five-two button {
+    padding: 12px 30px;
+    border-radius: 40px;
+    border: 1px solid black;
+    background: white;
+    font-size: 14px;
+}
+
+.four-one img,
+.five-two img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.four-one span pre,
+.five-two span pre {
+    font-size: 14px;
+}
+button{
+    margin-bottom: 4rem;
+    padding:1rem 5rem;
+}span{
+    margin-top: 0;
+}
+.six{
+    text-align: center;
+}
+.six h2{
+font-size: 2rem;
+}
+.six p{
+font-size: 14px;
+    color: gray;
+}
+
+.sub{
+    width:1100px;
+    height:400px;
+    display: flex;gap: 10px;
+}
+.sub-1{
+  position: relative;
+  animation: slideFromBottom 1.5s ease forwards; 
+  animation-duration: 2sec;
+  /* transform: scale(2); */
+}
+.s0{
+   animation-delay: 5s;
+}
+.s1{
+    animation-delay: 5.2s;
+}
+.s2{
+    animation-delay: 5.4s;
+}
+.s3{
+    animation-delay: 5.6s;
+}
+.s4{
+    animation-delay: 5.8s;
+}
+.sub-1 img{
+  width:100%;
+  height:100%;
+  transition:0.4s;
+}
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(rgb(249, 153, 153),white);
+  color:azure;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+  transition:0.4s;
+ 
+  /* transform: scale(1); */
+}
+
+@keyframes cards {
+     0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+}
+.sub-1:hover .overlay{
+  opacity:0.8;
+  transform: scale(1.1);
+}
+.sub-1:hover img{
+    transform:scale(1.1);
+}
+
+  .btn{
+    margin-left:28rem;
+    margin-top: 4rem;
+    padding: 1rem 3rem;
+  }
+  .team{
+      animation: slideFromBottom 1.5s ease forwards;
+     animation-delay: 6.5s;
+  }
+  .seven h2,.third h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #363636;
+  }
+  .seven p{
+    
+    margin-bottom: 5.5rem;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+  }
+  .sev-1 p,.sev-2 p{
+ font-size: 14px;
+    color: gray;
+  }
+  .sev-1 h4,.sev-2 h4{
+ font-size: 14px;
+    color: rgb(58, 57, 57);
+  }
+  .sev-1,.sev-2{
+    width:900px;
+    height:350px;
+    /* border:1px solid; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+  .sev1,.sev2{
+     width:250px;
+    height:350px;
+    /* border:1px solid; */
+  }
+  .eight p{
+text-align: center;
+margin-bottom: 10rem;
+color: gray;
+    font-size: 14px;
+
+  }
+  .eight h2{
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+  }
+  .eight-1{
+      /* height: 500px; */
+      width:1000px;
+      /* border:1px solid; */
+      display:flex;
+      justify-content: space-between;
+      margin-left: 2rem;
+  }
+  .e-1{
+    /* height: 400px; */
+    width: 200px;
+    /* border: 1px solid; */
+
+  }
+  .e-1 h1{
+    font-size: 4rem;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .e-1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: gray;
+    font-size: 14px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .nine{
+  width: 100%;
+    height: 180px;
+    border:1px solid;
+    margin-top: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(57, 56, 56);
+  
+  }
+  .n2{
+     display: flex; 
+     gap:30px; 
+     color:aliceblue;
+     font-size: 10px;
+  }
+  .n3{
+    display: flex;
+    gap:10px; 
+  }
+  .n1,.n2,.n3{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+  text-decoration: none;
+  color: inherit;
+}
+.n{
+    display:flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+.nine hr{
+  width: 80%;
+  height: 1px;
+  margin: 20px 0;
+  margin-left: 10%;
+  color: #666;
+}
+pre{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+ margin-left: 480px;
+  color:#666;
+}
