@@ -44,33 +44,10 @@ a,span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-.nav3{
-    margin-left: 500px;
-    display: flex;
-    gap:10px;
-    margin-top: 40px;
-}
-table{
-    width: 1200px;
-    height: 1500px;
-    margin-left: 30px;
-    margin-bottom: 50px;
-}
-hr{
-    width:300px;
-    margin-left: 490px;
-    margin-bottom: 50px;
-    margin-top:10px;
-}
-
 .a1:hover,.a2:hover,.a3:hover,.a4:hover,.a5:hover{
   color:red;
 }
 
-td{
-  width:300px;
-  height: 200px;
-}
 .img-box{
   position: relative;
   width: 100%;
@@ -78,22 +55,10 @@ td{
   overflow: hidden;
 }
 
-
-.img-box img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-
 .overlay{
   position:absolute;
   inset:0;
   background:rgba(255,0,0,0.6);
-  /* display:flex; 
-   justify-content:center;
-  align-items:center; */
   opacity:0;
   transition:0.4s;
   padding-left: 150px;
@@ -102,28 +67,16 @@ td{
 }
 .overlay h4{
   color:white;
-  
- 
+
 }
 .overlay p{
   color:white;
   font-size: 14px;
 }
-
-
 .img-box:hover .overlay{
   opacity:1;
 }
 
-
-.max{
-  font-size:26px;
-  color:white;
-  text-decoration:none;
-  background:rgba(0,0,0,0.7);
-  padding:10px 14px;
-  border-radius:50%;
-}
 .nine{
   width: 100%;
     height: 180px;
@@ -169,6 +122,75 @@ pre{
   font-size: 11px;
  margin-left: 480px;
   color:#666;
+}
+.img-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:15px;
+  margin-bottom: 100px;
+}
+
+.img-box{
+  aspect-ratio: 4 / 3;
+  position:relative;
+  overflow:hidden;
+}
+
+.img-box.tall{
+  grid-row: span 2;
+}
+
+.img-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+@media(max-width:768px){
+  .img-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:480px){
+  .img-grid{
+    grid-template-columns: 1fr;
+  }
+}
+.copyright{
+  text-align: center;
+  font-size: 11px;
+  color: #666;
+  margin: 10px 0;
+}
+.nav3{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;        
+  margin:40px 0 10px;
+}
+
+/* link style */
+.nav3 a{
+  padding:6px 10px;
+  font-size:14px;
+}
+
+/* hover */
+.nav3 a:hover{
+  color:red;
+}
+
+/* mobile */
+@media (max-width:480px){
+  .nav3{
+    gap:10px;
+  }
+
+  .nav3 a{
+    font-size:13px;
+  }
 }
 
 

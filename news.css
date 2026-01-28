@@ -41,7 +41,7 @@ a,span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-.imageContainer1{
+/* .imageContainer1{
     width:900px;
     height: 800px;
    
@@ -63,7 +63,7 @@ a,span{
  width:280px;
  height: 700px; 
   /* border:1px solid; */
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 
 }
 .image11{
@@ -75,7 +75,7 @@ a,span{
      width:280px;
     height: 200px;
    
-}
+} */ 
 .image12 p{
     margin-top: 15px;
     font-size: 14px;
@@ -96,9 +96,7 @@ span{
 .foot{
     display: flex;
     justify-content: space-between;
-    box-shadow: 2px;
-  
-    
+    box-shadow: 2px   
 }
 .foot1,.foot2{
     display:flex;
@@ -142,7 +140,6 @@ hr{
 }
 .n{
     display:flex;
-    /* justify-content: space-around; */
     justify-content: space-evenly;
 }
 .nine hr{
@@ -152,9 +149,54 @@ hr{
   margin-left: 10%;
   color: #666;
 }
-pre{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.imageContainer1,
+.imageContainer2{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;     
+  margin: 60px auto;
+  width: 100%;
+}
+.image-1{
+  width: 350px;         
+  display: flex;
+  flex-direction: column;
+}
+.image11 img{
+  width: 100%;
+  height: auto;         
+  display: block;
+}
+.image12{
+  padding: 15px;
+}
+
+.image12 p{
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px){
+  .image-1{
+    width: 90%;        
+  }
+}
+@media (max-width: 480px){
+  .image12 h4{
+    font-size: 16px;
+  }
+
+  .image12 p{
+    font-size: 13px;
+    max-width: auto;
+  }
+}
+.copyright{
+  text-align: center;
   font-size: 11px;
- margin-left: 480px;
-  color:#666;
+  color: #666;
+  margin: 10px 0;
 }
